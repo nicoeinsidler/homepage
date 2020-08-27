@@ -74,13 +74,11 @@ header currentPath =
                 , label =
                     Element.row [ Font.size 30, Element.spacing 16 ]
                         [ DocumentSvg.view
-                        , Element.text "elm-pages-starter"
+                        , Element.text "Nico Einsidler"
                         ]
                 }
             , Element.row [ Element.spacing 15 ]
-                [ elmDocsLink
-                , githubRepoLink
-                , highlightableLink currentPath Pages.pages.blog.directory "Blog"
+                [ highlightableLink currentPath Pages.pages.blog.directory "Blog"
                 ]
             ]
         ]
