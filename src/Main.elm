@@ -32,12 +32,12 @@ manifest =
     , categories = [ Pages.Manifest.Category.education ]
     , displayMode = Manifest.Standalone
     , orientation = Manifest.Portrait
-    , description = "elm-pages-starter - A statically typed site generator."
+    , description = "Nico Einsidler"
     , iarcRatingId = Nothing
-    , name = "elm-pages-starter"
+    , name = "nico-einsidler"
     , themeColor = Just Color.white
     , startUrl = pages.index
-    , shortName = Just "elm-pages-starter"
+    , shortName = Just "nico-einsidler"
     , sourceIcon = images.iconPng
     }
 
