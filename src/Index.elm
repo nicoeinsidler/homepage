@@ -18,7 +18,7 @@ view :
     List ( PagePath Pages.PathKey, Metadata )
     -> Element msg
 view posts =
-    Element.column [ Element.spacing 20 ]
+    Element.column [ Element.spacing 40 ]
         (posts
             |> List.filterMap
                 (\( path, metadata ) ->

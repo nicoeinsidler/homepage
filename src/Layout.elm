@@ -11,6 +11,8 @@ import Metadata exposing (Metadata)
 import Pages
 import Pages.Directory as Directory exposing (Directory)
 import Pages.ImagePath as ImagePath
+import Pages.Internal.Platform exposing (Msg)
+import Pages.Internal.Platform.Cli exposing (Msg)
 import Pages.PagePath as PagePath exposing (PagePath)
 import Palette
 
@@ -52,10 +54,23 @@ header currentPath =
         [ Element.row
             []
             [ Element.row [ Element.spacing 15 ]
-                [ highlightableLink currentPath Pages.pages.blog.directory "Blog"
+                [ highlightableLink currentPath Pages.pages.directory "←"
                 ]
             ]
         ]
+
+
+backHome : PagePath Pages.PathKey -> String -> Elment msg
+backHome currentPath displayName =
+    let
+        isHome =
+            currentPath |> Directory.includes Pages.pages.directory
+    in
+    if isHome then
+        Element.link [] { url = Pages.pages.directory |> Directory.indexPath |> PagePath.toString }
+
+    else
+        Element.paragraph [] [ text "test" ]
 
 
 highlightableLink :
