@@ -19,9 +19,9 @@ blogHeading : String -> Element msg
 blogHeading title =
     Element.paragraph
         [ Font.bold
-        , Font.family [ Font.typeface "Raleway" ]
+        , Font.family [ Font.typeface "Playfair Display" ]
         , Element.Region.heading 1
-        , Font.size 36
+        , Font.size 46
         , Font.center
         ]
         [ Element.text title ]

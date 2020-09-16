@@ -29,7 +29,7 @@ view document page =
             [ Element.width Element.fill ]
             [ header page.path
             , Element.column
-                [ Element.padding 30
+                [ Element.padding 60
                 , Element.spacing 40
                 , Element.Region.mainContent
                 , Element.width (Element.fill |> Element.maximum 800)
@@ -40,7 +40,7 @@ view document page =
             |> Element.layout
                 [ Element.width Element.fill
                 , Font.size 20
-                , Font.family [ Font.typeface "Roboto" ]
+                , Font.family [ Font.typeface "Playfair Display" ]
                 , Font.color (Element.rgba255 0 0 0 0.8)
                 ]
     }
