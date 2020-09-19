@@ -1,4 +1,9 @@
-body {
+* {
+	padding: 0px;
+	margin: 0px;
+}
+
+html {
 	font-family: "Lato", sans-serif;
 	font-size: 14px;
 }
@@ -14,6 +19,35 @@ body {
 	}
   }
 
+body {
+	display: grid;
+	grid-template-columns: 80vw;
+	grid-template-rows: auto auto;
+	grid-template-areas:
+		"header"
+		"main";
+	gap: 50px 0px;
+	justify-content: center;
+
+}
+
+header {
+	font-family: "Playfair Display", serif;
+	font-weight: 400;
+	grid-area: header;
+	margin-top: 60px;
+}
+
+main {
+	grid-area: main;
+	display: grid;
+	grid-template-columns: auto;
+	grid-template-rows: auto auto;
+	grid-template-areas: "blog" "cv";
+}
+#cv {grid-area: cv;}
+#blog {grid-area: blog;}
+
 h1 {
 	font-family: "Playfair Display", serif;
 	font-weight: 700;
@@ -22,3 +56,9 @@ h1 {
 p {
 	font-size: 1rem;
 }
+
+/* .hi::before {
+	content: "👋" ;
+	position: absolute;
+	margin-top: -45px;
+} */
