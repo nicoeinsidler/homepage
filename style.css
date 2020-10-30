@@ -16,6 +16,7 @@
 html {
 	font-family: "Lato", sans-serif;
 	font-size: 14px;
+	text-rendering: optimizeLegibility;
 }
 
 @media screen and (min-width: 320px) {
@@ -52,7 +53,7 @@ header {
 }
 
 header>h1 {
-	border-bottom: 8px solid #ff0000;
+	border-bottom: 10px solid #ff0000;
 }
 
 header>h1 {
@@ -74,6 +75,7 @@ header>p {
 main h2 {
 	font-family: "Playfair Display", serif;
 	font-weight: 700;
+	font-size: 22pt;
 	margin-bottom: 10px;
 }
 
@@ -91,19 +93,26 @@ main>section {
 	flex-wrap: nowrap;
 	justify-content: space-between;
 	width: 100%;
-	border: 1px solid red;
 }
 #blog>ul li {
 	display: block;
 	background-color: #eee;
-	padding: 10px;
-	height: calc(100px + 5vh);
+	height: calc(90px + 5vh);
 	width: calc(30vw - 20px);
-	margin-top: 20px;
 	color: black;
+	position: relative;
 }
 
-#blog> ul li a {
+#blog>ul li a {
 	text-decoration: none;
 	color: black;
+	position: absolute;
+	bottom: 10px;
+	left: 10px;
+	margin-right: 10px;
 }
+
+
+/* ------------------------------- Projects ------------------------------- */
+
+#project
