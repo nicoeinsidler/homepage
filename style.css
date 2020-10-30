@@ -21,14 +21,19 @@ html {
 
 @media screen and (min-width: 320px) {
 	html {
-	  font-size: calc(14px + 6 * ((100vw - 320px) / 680));
+		font-size: calc(14px + 6 * ((100vw - 320px) / 680));
 	}
-  }
-  @media screen and (min-width: 1000px) {
+}
+
+@media screen and (min-width: 800px) {
+	
+}
+
+@media screen and (min-width: 1000px) {
 	html {
-	  font-size: 22px;
+		font-size: 22px;
 	}
-  }
+}
 
 body {
 	display: grid;
@@ -97,7 +102,7 @@ main>section {
 #blog>ul li {
 	display: block;
 	background-color: #eee;
-	height: calc(90px + 5vh);
+	height: calc(30vw - 25px);
 	width: calc(30vw - 20px);
 	color: black;
 	position: relative;
