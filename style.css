@@ -115,4 +115,22 @@ main>section {
 
 /* ------------------------------- Projects ------------------------------- */
 
-#project
+#projects>table {
+	font-size: 0.9rem;
+	border: none;
+	border-collapse: collapse;
+	empty-cells: hide;
+}
+#projects>table tr:hover {
+	background-color: #eee;
+}
+#projects>table th {
+	border-bottom: 1px solid black;
+}
+#projects>table th, #projects>table td {
+	padding: 8px;
+}
+#projects>table a {
+	color: black;
+	text-decoration: none;
+}
