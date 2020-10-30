@@ -38,7 +38,6 @@ body {
 		"main";
 	gap: 50px 0px;
 	justify-content: center;
-
 }
 
 /* -------------------------------------------------------------------------- */
@@ -84,3 +83,27 @@ main>section {
 
 
 /* ---------------------------------- Blog ---------------------------------- */
+
+#blog>ul {
+	list-style: none;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	width: 100%;
+	border: 1px solid red;
+}
+#blog>ul li {
+	display: block;
+	background-color: #eee;
+	padding: 10px;
+	height: calc(100px + 5vh);
+	width: calc(30vw - 20px);
+	margin-top: 20px;
+	color: black;
+}
+
+#blog> ul li a {
+	text-decoration: none;
+	color: black;
+}
