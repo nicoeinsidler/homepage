@@ -27,6 +27,7 @@ body {
 		"main";
 	gap: 50px 0px;
 	justify-content: center;
+	padding-top: 25px;
 }
 
 
@@ -78,8 +79,9 @@ a:hover {
 	background-color: #eee;
 }
 
-a:visited {
-
+a:after:visited {
+	/* content: " ✓"; */
+	content:  "\2713 ";
 }
 
 /* -------------------------------------------------------------------------- */
@@ -98,6 +100,21 @@ main>section {
 }
 
 
+/* --------------------------------- Content -------------------------------- */
+
+p {
+	margin-bottom: 10px;
+}
+
+ul {
+	list-style-type: "–";
+	padding-left: 30px;
+}
+
+ul li {
+	padding-left: 10px;
+	margin-bottom: 5px;
+}
 
 /* ---------------------------------- Blog ---------------------------------- */
 
@@ -177,6 +194,7 @@ main>section {
 			"header" "main";
 		gap: 0px 50px;
 		justify-content: center;
+		padding-top: 35px;
 	}
 
 	main {
