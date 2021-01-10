@@ -91,7 +91,7 @@ a:after:visited {
 main h2 {
 	font-family: "Playfair Display", serif;
 	font-weight: 700;
-	font-size: 22pt;
+	font-size: 1.8rem;
 	margin-bottom: 20px;
 }
 
@@ -152,6 +152,7 @@ ul li {
 	border: none;
 	border-collapse: collapse;
 	empty-cells: hide;
+	width: 100%;
 }
 #projects>table tr:not(:first-child):hover {
 	background-color: #eee;
