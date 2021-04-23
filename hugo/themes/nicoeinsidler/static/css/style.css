@@ -59,8 +59,16 @@ header>h1 a:hover {
 	background: none;
 	text-decoration: none;
 }
-header>p {
+header>p, header>nav {
 	font-size: 1.8rem;
+}
+
+header>nav ul {
+	list-style: none;
+	padding: 0px;
+}
+header>nav ul li {
+	display: inline-block;
 }
 
 /* -------------------------------------------------------------------------- */
