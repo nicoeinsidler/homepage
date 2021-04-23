@@ -1,7 +1,13 @@
 {{ define "main" }}
+{{ range (where .Site.RegularPages "Type" "in" (slice "blog")).GroupByDate "2006" }}
+<h2>{{ .Key }}</h2>
 <ul>
-    {{ range ( where .Site.RegularPages "Type" "blog" ).ByDate }}
-    <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
+    {{ range .Pages }}
+    <li>
+        <a href="{{ .Params.externalLink | default .RelPermalink }}">{{ .Title }}</a>
+    </li>
     {{ end }}
+
 </ul>
+{{ end }}
 {{ end }}
