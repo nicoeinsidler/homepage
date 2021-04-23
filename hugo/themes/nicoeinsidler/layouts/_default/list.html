@@ -1,0 +1,7 @@
+{{ define "main" }}
+<ul>
+    {{ range ( where .Site.RegularPages "Type" "blog" ).ByDate }}
+    <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
+    {{ end }}
+</ul>
+{{ end }}
