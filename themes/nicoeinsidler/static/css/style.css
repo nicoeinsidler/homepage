@@ -138,6 +138,7 @@ ul li {
 	flex-wrap: nowrap;
 	justify-content: space-between;
 	width: 100%;
+	padding-left: 0px;
 }
 #blog>ul li {
 	display: block;
