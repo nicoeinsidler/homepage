@@ -6,3 +6,4 @@ theme = "nicoeinsidler"
 [params]
   author = "Nico Einsidler"
   description = "Nico Einsidler's personal homepage."
+  custom_css = ["css/style.css"]
