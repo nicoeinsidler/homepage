@@ -2,6 +2,8 @@ baseURL = "ne555.io"
 languageCode = "en-us"
 title = "Nico Einsidler."
 theme = "nicoeinsidler"
+sectionPagesMenu = "nav"
+pluralizelisttitles = "false"
 
 [params]
   author = "Nico Einsidler"
