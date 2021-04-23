@@ -1,3 +1,8 @@
 baseURL = "ne555.io"
 languageCode = "en-us"
-title = "Personal homepage of Nico Einsidler."
+title = "Nico Einsidler."
+theme = "nicoeinsidler"
+
+[params]
+  author = "Nico Einsidler"
+  description = "Nico Einsidler's personal homepage."
