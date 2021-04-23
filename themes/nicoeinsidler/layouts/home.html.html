@@ -1,16 +1,11 @@
 {{ define "main" }}
 
 <section id="about">
-    <h2>About</h2>
-    <p>Hi, nice to meet you! At day I'm working at <a href="https://www.ibm.com/at-de">IBM</a>, at night
-        persuing my master's in physics
-        at <a href="https://www.tuwien.at/">TU Wien</a>.</p>
-    <p>You can follow me on various networks here:</p>
-    <ul>
-        <li><a href="https://twitter.com/ne555">Twitter (@NE555)</a></li>
-        <li><a href="https://github.com/nicoeinsidler">GitHub</a></li>
-        <li><a href="https://www.linkedin.com/in/nicoeinsidler/">LinkedIn</a></li>
-    </ul>
+    {{ with .Site.GetPage "about.md" }}
+    <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
+    {{ .Summary }}
+
+    {{ end }}
 </section>
 <section id="blog">
     <h2>Blog</h2>
