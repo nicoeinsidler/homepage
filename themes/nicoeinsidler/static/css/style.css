@@ -24,11 +24,15 @@ body {
 	grid-template-rows: auto auto;
 	grid-template-areas:
 		"header"
-		"main";
+		"main"
+		"footer";
 	gap: 50px 0px;
 	justify-content: center;
 	padding-top: 25px;
 }
+header {grid-area: header;}
+main {grid-area: main;}
+footer {grid-area: footer;}
 
 
 /* -------------------------------------------------------------------------- */
@@ -76,6 +80,49 @@ header>nav ul li:first-child {
 header>nav a {
 	border-bottom: none;
 }
+
+/* -------------------------------------------------------------------------- */
+/*                                   Footer                                   */
+/* -------------------------------------------------------------------------- */
+
+footer {
+	color: #bbb;
+	padding: 30px 0px;
+	text-align: center;
+}
+
+#social {
+	list-style: none;
+	padding-left: 0px;
+}
+#social li {
+	display: inline-block;
+	width: 40px;
+	height: 40px;
+}
+#social li a {
+	color: #bbb;
+	display: block;
+	width: 100%;
+	height: 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	text-indent: -99999px;
+	border-bottom: none;
+	opacity: .2;
+}
+#social li a:hover {
+	opacity: 1;
+	background-color: white;
+}
+
+footer a[href^="https://twitter.com"] {background-image: url(/images/logo--twitter.svg);}
+footer a[href^="https://www.linkedin.com"] {background-image: url(/images/logo--linkedin.svg);}
+footer a[href^="https://github.com"] {background-image: url(/images/logo--github.svg);}
+footer a[href^="https://www.instagram.com"] {background-image: url(/images/logo--instagram.svg);}
+footer a[href^="https://youtube.com/"] {background-image: url(/images/logo--youtube.svg);}
+footer a[href^="https://www.flickr.com/"] {background-image: url(/images/logo--flickr.svg);}
 
 /* -------------------------------------------------------------------------- */
 /*                                 Font Specs                                 */
@@ -216,7 +263,8 @@ ul li {
 		grid-template-columns: 30vw 60vw;
 		grid-template-rows: auto;
 		grid-template-areas:
-			"header" "main";
+			"header main"
+			". footer";
 		gap: 0px 50px;
 		justify-content: center;
 		padding-top: 35px;
