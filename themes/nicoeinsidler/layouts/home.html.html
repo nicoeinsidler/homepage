@@ -13,9 +13,6 @@
         {{ range ( first 3 ( where .Site.RegularPages "Type" "blog" ).ByDate ) }}
         <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
         {{ end }}
-        <!-- <li><a href="">Using the IBM Cloud to create your own daily news podcast.</a></li>
-                <li><a href="">How to host your homepage on IBM Cloud for free.</a></li>
-                <li><a href="">First redesign of my homepage since 2012.</a></li> -->
     </ul>
 </section>
 <section id="projects">
