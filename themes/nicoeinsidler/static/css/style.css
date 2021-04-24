@@ -73,6 +73,9 @@ header>nav ul li {
 header>nav ul li:first-child {
 	padding-left: 0px !important;
 }
+header>nav a {
+	border-bottom: none;
+}
 
 /* -------------------------------------------------------------------------- */
 /*                                 Font Specs                                 */
